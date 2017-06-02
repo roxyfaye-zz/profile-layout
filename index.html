@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Profile Setup</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <form action="http://foo.com" method="POST">
+    <fieldset>
+         <div class="outer">
+         <section>
+          <h5>Sign Up</h5>
+         <div class="input-radio">
+           <div>
+          <input type="radio" name="admin" value="admin" id="admin"/>
+          <label for="admin">admin</label>
+          </div>
+          <div>
+           <input type="radio" name="personal" value="personal" id="personal"/>
+           <label for="personal">personal</label>
+         </div>
+         <div>
+           <input type="radio" name="guest" value="guest" id="guest"/>
+           <label for="guest">guest</label>
+         </div>
+       </div>
+       <div class="input-container">
+        <div class="input-fields">
+           <label for="name">name</label>
+           <input type="text" name="standard" id="standard"/>
+       </div>
+           <div class="input-fields">
+               <label for="mail">email</label>
+               <input type="email" name="main" id="main"/>
+            </div>
+            <div class="input-fields">
+              <label for="pw">password</label>
+              <input type="password" name="pw" id="pw"/>
+            </div>
+            <div class="input-fields">
+             <label for="confirmpw">confirm password</label>
+             <input type="password" name="cpw" id="confirmpw"/>
+            </div>
+          <div class="input-fields">
+            <form action="upload.php" method="post" enctype="multipart/form-data"/>
+            <label for="filetToUpload">profile picture</label>
+            <input type="file" name="fileToUpload" id="fileToUpload"/>
+          </div>
+            <div class="input-fields">
+            <input type="submit" value="Submit Data"/>
+          </div>
+        </div>
+
+      </section>
+     </div>
+    </fieldset>
+  </form>
+</body>
+</html>
